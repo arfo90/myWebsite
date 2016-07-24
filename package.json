@@ -1,8 +1,36 @@
 {
+  "name": "my_cv",
+  "version": "1.0.0",
+  "description": "Online CV view",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arfo90/myCV.git"
+  },
+  "author": "Amireza Fatemi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arfo90/myCV/issues"
+  },
   "dependencies": {
+    "express": "3.3.5",
+    "jade": "*",
     "moment": "2.3.x",
     "underscore": "1.4.x",
-    "typogr": "0.5.x"
+    "typogr": "0.5.x",
+	"ejs": "^1.0.0"
   },
-  "private": "true"
+  "engines": {
+    "node": "6.2.0"
+  },
+   "keywords": [
+    "myCV",
+    "heroku"
+  ],
+  "private": "true",
+  "homepage": "https://github.com/arfo90/myCV#readme"
 }
