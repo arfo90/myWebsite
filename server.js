@@ -36,14 +36,6 @@ app.get('/', function(req, res) {
     res.render('index');
 });
 
-// app.get('/cv', function(req, res) {
-//     res.render('index');
-// });
-
-app.get('/cv', function(req, res) {
-    res.render('./public/cv.html');
-});
-
 
 console.log('Booting..');
 console.log('Here we go..');
