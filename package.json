@@ -25,6 +25,12 @@
 	"ejs": "^1.0.0",
     "bower": "1.7.x"
   },
+
+  "scripts": {
+    "postinstall": "bower install"
+  },
+
+
   "engines": {
     "node": "6.2.0"
   },
