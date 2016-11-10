@@ -30,10 +30,15 @@ app.set('view engine', 'ejs');
 // });
 
 app.use(express.static(__dirname + '/public'));
+app.use('/bower_components',  express.static(__dirname + '/bower_components'));
 
 
 app.get('/', function(req, res) {
     res.render('index');
+});
+
+app.get('/gol', function(req, res) {
+    res.render(__dirname + '/public/projects/gameoflife.html');
 });
 
 
