@@ -12,7 +12,7 @@ if (worldGrid == undefined){
 }
 var worldSize = 40;
 
-var scale = 15;
+var scale = 9;
 var sizeScale = worldSize * scale;
 
 var size = new Size(sizeScale);
@@ -20,7 +20,7 @@ var pageCenter = new Point(view.center.x, view.center.y);
 
 var mainFrame = new Rectangle(size);
 var path2 = new Path.Rectangle(mainFrame);
-path2.strokeColor = 'black';
+//path2.strokeColor = 'black';
 path2.position = pageCenter;
 var mainPoint = new Point(path2.bounds.topLeft);
 // console.log(pageCenter);
@@ -54,7 +54,7 @@ function getPath(state, currenctRow, currenctCol){
 	point.y += currenctCol * scale;
 	var rect = new Rectangle(point, size);
 	var path = new Path.Rectangle(rect);
-	path.strokeColor = 'black';
+	//path.strokeColor = 'black';
 	if (state){
 		path.fillColor = 'black';
 	}
@@ -160,9 +160,9 @@ function onFrame(event){
 		    
 		    // console.log(worldGrid[i][j].path);
 		    if (worldGrid[i][j].state){
-				worldGrid[i][j].path.fillColor = 'black';
+				worldGrid[i][j].path.fillColor = '#4ca64c';
 			} else {
-				worldGrid[i][j].path.fillColor = '#BE2625';
+				worldGrid[i][j].path.fillColor = 'white';
 			}
 
 			j++;
