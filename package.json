@@ -22,7 +22,8 @@
     "moment": "2.3.x",
     "underscore": "1.4.x",
     "typogr": "0.5.x",
-	"ejs": "^1.0.0"
+	"ejs": "^1.0.0",
+    "bower": "1.7.x"
   },
   "engines": {
     "node": "6.2.0"
