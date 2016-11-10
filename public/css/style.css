@@ -1205,3 +1205,7 @@ a.textlink:hover {text-decoration: underline;}
 	    -ms-transform:translateX(-10px);
 	        transform:translateX(-10px);
 }
+
+.project-list {
+	visibility:hidden;
+}

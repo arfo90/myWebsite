@@ -31,17 +31,32 @@
 
 			<!-- categories  -->
 			<div class="col-md-3">
-				<div class="row categories-grid wow fadeInLeft">
-					<span class="montserrat-text uppercase">My Name <br> is Amir</span>
+				<div class="row categories-grid wow fadeInLeft main-list">
+					<span class="montserrat-text uppercase">Hello,<br> I'm Amir</span>
 
 					<nav class="categories">
 						<!-- <ul class="portfolio_filter"> -->
 						<ul>
 							<!-- <li><a href="" class="active" data-filter="*">all</a></li> -->
 							<li><a class="textlink" href="https://medium.com/@arfo90" target="_blank">My blog</a></li>
-							<li><a class="textlink" href="" data-filter=".projects">Projects</a></li>
+							<li><a class="textlink" id="projectsLink" data-filter=".projects">Projects</a></li>
 							<li><a class="textlink" href="https://github.com/arfo90" target="_blank">Github</a></li>
 							<li><a class="textlink" href="cv.html" data-filter=".myCV">My CV</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+
+			<div class="col-md-3 project-list">
+				<div class="row categories-grid wow fadeInLeft">
+
+					<nav class="categories">
+						<!-- <ul class="portfolio_filter"> -->
+						<ul>
+							<!-- <li><a href="" class="active" data-filter="*">all</a></li> -->
+							<li><a class="textlink" href="https://github.com/arfo90/boostx">boostx</a></li>
+							<li><a class="textlink" href="/gol">GameOFLife</a></li>
+							<li><a class="textlink" href="" data-filter="">back</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -240,7 +255,14 @@
 
   ga('create', 'UA-80671128-1', 'auto');
   ga('send', 'pageview');
+</script>
+<script type="text/javascript">
+	  $('.project-list').hide();
 
+	  $( "#projectsLink" ).click(function() {
+	  	$('.main-list').hide();
+	  	$('.project-list').show();
+	  });
 </script>
 </body>
 </html>
